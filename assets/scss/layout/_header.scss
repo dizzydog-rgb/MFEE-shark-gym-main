@@ -1,0 +1,19 @@
+.navbar {
+  list-style: none;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item.active {
+  color: #007bff;
+  /* Bootstrap 的主要藍色 */
+  font-weight: bold;
+}
+
+.header-logo {
+  width: 142px;
+  height: 142px;
+}
