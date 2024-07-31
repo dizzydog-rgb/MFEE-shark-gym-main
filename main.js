@@ -1,5 +1,4 @@
 import './assets/scss/all.scss';
-import './assets/bootstrap-5.1.3/dist/js/bootstrap'
 
 console.log("Hello world!");
 
