@@ -1,21 +1,55 @@
 <header class="container-md">
     <nav class="row">
-        <ul class="col-md-8 d-flex justify-content-between align-items-center w-100 navbar">
+        <ul class="col col-md-8 d-none d-md-flex justify-content-between align-items-center w-100 navbar">
             <a href="../pages/index.html" class="nav-item" data-page="index">
-                <li class="fs-3 fw-bolder">首頁</li>
+                <li class="fs-md-3 fw-bolder">首頁</li>
             </a>
             <a href="../pages/about.html" class="nav-item" data-page="about">
-                <li class="fs-3 fw-bolder">關於我們</li>
+                <li class="fs-md-3 fw-bolder">關於我們</li>
             </a>
             <a href="../pages/index.html">
                 <li><img src="../assets/images/shark-logo.png" alt="logo" class="header-logo"></li>
             </a>
             <a href="../pages/blog.html" class="nav-item" data-page="blog">
-                <li class="fs-3 fw-bolder">部落格專欄</li>
+                <li class="fs-md-3 fw-bolder">部落格專欄</li>
             </a>
             <a href="../pages/location.html" class="nav-item" data-page="location">
-                <li class="fs-3 fw-bolder">最近的運動地點</li>
+                <li class="fs-md-3 fw-bolder">最近的運動地點</li>
             </a>
         </ul>
     </nav>
+    <!-- hamberger -->
+    <div class="hambuger">
+        <div class="d-flex justify-content-between align-items-center">
+            <a href="../pages/index.html" class="d-block">
+                <div><img src="../assets/images/shark-logo.png" alt="logo" class="header-logo"></div>
+            </a>
+            <div class="menu">
+                <span class="material-icons menu-icon">
+                    menu
+                </span>
+                <span class="material-icons close-icon">
+                    close
+                </span>
+            </div>
+        </div>
+
+
+        <ul class="hambuger-list">
+            <a href="../pages/index.html" class="nav-item" data-page="index">
+                <li class="fs-5">首頁</li>
+            </a>
+            <a href="../pages/about.html" class="nav-item" data-page="about">
+                <li class="fs-5">關於我們</li>
+            </a>
+
+            <a href="../pages/blog.html" class="nav-item" data-page="blog">
+                <li class="fs-5">部落格專欄</li>
+            </a>
+            <a href="../pages/location.html" class="nav-item" data-page="location">
+                <li class="fs-5">最近的運動地點</li>
+            </a>
+        </ul>
+    </div>
+
 </header>

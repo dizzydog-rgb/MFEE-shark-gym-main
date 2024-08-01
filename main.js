@@ -19,6 +19,23 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// hamberger list
+const menuIcon = document.querySelector('.menu-icon');
+const closeIcon = document.querySelector('.close-icon')
+const hambugerList = document.querySelector('.hambuger-list');
+
+menuIcon.addEventListener('click', () => {
+    hambugerList.classList.toggle('my-d-flex');
+    menuIcon.classList.toggle('my-d-none');
+    closeIcon.classList.toggle('my-d-block');
+});
+
+closeIcon.addEventListener('click', () => {
+    hambugerList.classList.toggle('my-d-flex');
+    closeIcon.classList.toggle('my-d-block');
+    menuIcon.classList.toggle('my-d-none');
+});
+
 
 // BS5 modal
 var myModal = document.getElementById('myModal')

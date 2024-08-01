@@ -12,3 +12,14 @@ footer {
   width: 142px;
   height: 142px;
 }
+
+@media (max-width: 767px) {
+  .footer-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  ul {
+    margin-right: 24px;
+  }
+}

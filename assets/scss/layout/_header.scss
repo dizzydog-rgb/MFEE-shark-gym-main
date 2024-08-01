@@ -17,3 +17,56 @@
   width: 142px;
   height: 142px;
 }
+
+.hambuger-list {
+  text-align: center;
+  padding: 40px 0px;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid $primary;
+  position: fixed;
+  left: -50px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+  transition: left 0.3s ease;
+  display: none;
+
+  li {
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+}
+
+.close-icon {
+  display: none;
+}
+
+.my-d-flex {
+  display: flex;
+}
+
+.my-d-none {
+  display: none;
+}
+
+.my-d-block {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  header {
+    .navbar {
+      display: none;
+    }
+
+    .header-logo {
+      width: 80px;
+      height: 80px;
+    }
+
+    .material-icons {
+      font-size: 40px;
+    }
+  }
+}
