@@ -243,8 +243,9 @@ body {
   }
 
   .lesson-section {
+
     .lesson-item {
-      gap: 24px;
+      gap: 12px;
 
       .lesson-info {
         height: 100%;
@@ -262,6 +263,12 @@ body {
   .wahtWeDo-section {
     padding-top: 24px;
 
+    .tilte {
+      h4 {
+        font-size: 20px;
+      }
+    }
+
     .icon {
       img {
         max-height: 80px;
@@ -271,15 +278,20 @@ body {
 
     .card-group {
       padding: 0px 48px;
+      flex-direction: column;
+      gap: 24px;
 
       margin-bottom: 48px;
 
       .card {
         padding: 12px 24px;
-        margin-bottom: 24px;
 
         .card-body {
           padding: 0px 48px;
+
+          h5 {
+            font-size: 20px;
+          }
 
           .card-text {
             color: $primary;
