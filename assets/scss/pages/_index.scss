@@ -205,6 +205,10 @@ body {
 
 
 @media (max-width: 767px) {
+  ul {
+    margin: 0;
+  }
+
   .about-shark-section {
     padding: 48px 24px;
   }
@@ -244,17 +248,19 @@ body {
 
   .lesson-section {
 
-    .lesson-item {
-      gap: 12px;
-
-      .lesson-info {
-        height: 100%;
+    .lesson-group {
+      .lesson-item {
         gap: 12px;
-        padding: 0 24px;
-        text-align: center;
 
-        p {
-          line-height: 1.5rem;
+        .lesson-info {
+          height: 100%;
+          gap: 12px;
+          padding: 0 24px;
+          text-align: center;
+
+          p {
+            line-height: 1.5rem;
+          }
         }
       }
     }
