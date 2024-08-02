@@ -23,13 +23,14 @@
 
   .hambuger-list {
     text-align: center;
-    padding: 40px 0px;
+    padding: 40px 0;
     flex-direction: column;
+    gap: 32px;
     justify-content: center;
     border-top: 1px solid $primary;
     position: fixed;
-    left: -50px;
-    width: 100%;
+    left: 0;
+    width: 100vw;
     background-color: #fff;
     z-index: 999;
     transition: left 0.3s ease;
@@ -37,7 +38,7 @@
 
     li {
       margin: 0 auto;
-      padding: 20px 0;
+
     }
   }
 
