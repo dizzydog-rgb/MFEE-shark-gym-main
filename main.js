@@ -38,9 +38,31 @@ closeIcon.addEventListener('click', () => {
 
 
 // BS5 modal
-var myModal = document.getElementById('myModal')
-var myInput = document.getElementById('myInput')
+// var myModal = document.getElementById('myModal')
+// var myInput = document.getElementById('myInput')
 
-myModal.addEventListener('shown.bs.modal', function () {
-    myInput.focus()
+// myModal.addEventListener('shown.bs.modal', function () {
+//     myInput.focus()
+// })
+
+// email confirm
+document.addEventListener('DOMContentLoaded', function(){
+   const subscribeBtn = document.getElementById('button-addon');
+   const emailInput = document.querySelector('input[placeholder="請輸入您的電子郵件"]');
+
+   subscribeBtn.addEventListener('click', function(){
+    
+    let email = emailInput.value.trim();
+
+    if(validEmail(email)){
+        alert(`感謝您的訂閱，我們將定期發送電子報至 ${email}`)
+    }else{
+        alert('請輸入有效的電子郵件地址')
+    }
+   });
+
+   function validEmail(email){
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+   }
 })
