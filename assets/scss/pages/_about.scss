@@ -1,14 +1,16 @@
 .coach-section {
     padding: 64px 0;
     background-color: $light-green;
-    .coach-item{
+
+    .coach-item {
         gap: 24px;
+
         .imgContainer {
             position: relative;
             width: 50%;
             align-self: center;
         }
-        
+
         .imgContainer img {
             aspect-ratio: 5 / 4;
             object-fit: cover;
@@ -17,7 +19,7 @@
             position: relative;
             z-index: 2;
         }
-        
+
         .imgContainer::after {
             content: '';
             position: absolute;
@@ -33,73 +35,83 @@
         .bg-to-right::after {
             left: 20px;
         }
-        
-        
-        .coach-info{
+
+
+        .coach-info {
             width: 50%;
-            gap: 12px;
-            h2{
-                font-size: 32px;
+            gap: 18px;
+
+            h2 {
+                font-size: 36px;
                 color: $third;
             }
-            h5{
-                font-size: 24px;
+
+            h5 {
+                font-size: 28px;
                 font-weight: 400;
                 color: $primary;
             }
-            p{
-                font-size: 16px;
-                line-height: 1.5rem;
+
+            p {
+                font-size: 18px;
+                line-height: 2rem;
                 color: $gray;
             }
         }
     }
-    
+
 }
 
-.intro-section{
+.intro-section {
     width: 80%;
     padding: 64px 0 96px;
     text-align: center;
-    h2{
+
+    h2 {
         font-size: 32px;
         margin-bottom: 12px;
     }
-    h5{
+
+    h5 {
         font-size: 24px;
         font-weight: 400;
         margin-bottom: 32px;
     }
-    img{
+
+    img {
         width: 80%;
         aspect-ratio: 10/6;
         object-fit: cover;
     }
 }
 
-.subscribe-section{
+.subscribe-section {
     text-align: center;
     background: url("../images/about-bg.jpg") center;
     background-size: cover;
     width: 100%;
     padding: 96px 0;
-    .subscribe-block{
+
+    .subscribe-block {
         width: 66%;
         background-color: $light-green;
         margin: 0 auto;
         padding: 120px 64px;
     }
-    h2{
+
+    h2 {
         font-size: 32px;
         color: $third;
         margin-bottom: 24px;
     }
-    h5{
+
+    h5 {
         font-size: 20px;
         font-weight: 400;
         margin-bottom: 24px;
     }
-    .btn-submit{
+
+    .btn-submit {
         color: white;
         background-color: $primary;
     }
@@ -108,64 +120,79 @@
 @media (max-width: 767px) {
     .coach-section {
         padding: 48px 0;
-        .coach-item{
+
+        .coach-item {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
             gap: 16px;
             margin-top: 24px;
-            .imgContainer{
+
+            .imgContainer {
                 width: 80%;
             }
-            .coach-info{
+
+            .coach-info {
                 width: 80%;
                 gap: 8px;
-                h2{
+
+                h2 {
                     font-size: 32px;
                 }
-                h5{
+
+                h5 {
                     font-size: 24px;
                 }
-                p{
+
+                p {
                     font-size: 16px;
                 }
             }
         }
-        .column-reverse{
+
+        .column-reverse {
             flex-direction: column-reverse
-        };
+        }
+
+        ;
     }
-    
-    .intro-section{
+
+    .intro-section {
         width: 90%;
         padding: 48px 0 64px;
         text-align: center;
-        h2{
+
+        h2 {
             font-size: 28px;
         }
-        h5{
+
+        h5 {
             font-size: 18px;
             margin-bottom: 24px;
         }
-        img{
+
+        img {
             width: 90%;
         }
     }
-    
-    .subscribe-section{
+
+    .subscribe-section {
         width: 100%;
         padding: 96px 0;
-        .subscribe-block{
+
+        .subscribe-block {
             width: 90%;
             background-color: $light-green;
             margin: 0 auto;
             padding: 96px 48px;
         }
-        h2{
+
+        h2 {
             font-size: 32px;
         }
-        h5{
+
+        h5 {
             font-size: 18px;
         }
     }

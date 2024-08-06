@@ -1,0 +1,93 @@
+.blog-section {
+    padding: 96px 0 120px;
+
+    .blog-group {
+        h2 {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        h5 {
+            font-size: 24px;
+            font-weight: 400;
+            color: $gray;
+            margin-bottom: 48px;
+        }
+    }
+
+    .blog-item {
+        gap: 16px;
+        margin-bottom: 48px;
+
+        img {
+            width: 40%;
+            aspect-ratio: 4/3;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .date_tag_block {
+            gap: 12px;
+            margin-bottom: 12px;
+
+            .date {
+                padding: 6px 6px 6px 0px;
+            }
+
+            .tag {
+                color: $gray;
+                background-color: rgb(224, 224, 224);
+                padding: 6px 12px;
+                border-radius: 25px;
+            }
+        }
+
+        .blog-content {
+            h4 {
+                font-size: 24px;
+                margin-bottom: 12px;
+            }
+
+            p {
+                font-size: 18px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                line-clamp: 4;
+                -webkit-box-orient: vertical;
+                margin-bottom: 12px;
+            }
+        }
+
+
+    }
+
+    .btn-more {
+        padding: 8px 48px;
+        background-color: rgb(188, 188, 188);
+        font-size: 28px;
+        position: absolute;
+        left: 50%;
+    }
+
+    aside {
+        h2 {
+            font-size: 36px;
+            margin-bottom: 48px;
+        }
+
+        a {
+            font-size: 24px;
+            margin-bottom: 48px;
+            font-weight: 400;
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited {
+            color: black;
+        }
+    }
+}
