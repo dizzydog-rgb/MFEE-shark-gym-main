@@ -19,12 +19,33 @@
 
         <div class="container-fluid blog-section">
             <div class="row justify-content-center">
-                <ul class="col-md-6 blog-group">
+                <ul class="col-md-6 blog-group" id="article-list">
                     <li class="text-center">
                         <h2>部落格專欄</h2>
                         <h5>Lorem ipsum dolor sit amet!</h5>
                     </li>
-                    <li class="blog-item d-flex">
+                    <li>
+                        <aside class="col-md-2 col d-block d-md-none">
+                            <div class="tag-group text-center d-flex" id="tag-conainer">
+                                <button class="btn tag-all" vlaue="all-article">
+                                    全部文章
+                                </button>
+                                <button class="btn btn-tag" value="coach-column">
+                                    教練專欄
+                                </button>
+                                <button class="btn btn-tag" value="training-zone">
+                                    訓練專區
+                                </button>
+                                <button class="btn btn-tag" value="health-nutrition">
+                                    健康與營養
+                                </button>
+                                <button class="btn btn-tag" value="member-stroy">
+                                    成員故事
+                                </button>
+                            </div>
+                        </aside>
+                    </li>
+                    <li class="blog-item" data-tags="health-nutrition">
                         <img src="../assets/images/article_1.jpg">
                         <div class="blog-info">
                             <div class="date_tag_block d-flex">
@@ -44,7 +65,7 @@
                         </div>
 
                     </li>
-                    <li class="blog-item d-flex">
+                    <li class="blog-item" data-tags="coach-column">
                         <img src="../assets/images/article_2.jpg">
                         <div class="blog-info">
                             <div class="date_tag_block d-flex">
@@ -55,24 +76,34 @@
                                 <h4>文章標題</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sequi maiores voluptas
                                     consequatur pariatur corrupti, deleniti quo quam fugiat esse.</p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    進入文章
+                                </button>
                             </div>
                         </div>
                     </li>
-                    <li class="blog-item d-flex">
+                    <li class="blog-item" data-tags="training-zone">
                         <img src="../assets/images/article_3.jpg">
                         <div class="blog-info">
                             <div class="date_tag_block d-flex">
                                 <div class="date">2024/01/19</div>
-                                <div class="tag">重量訓練</div>
+                                <div class="tag">訓練專區</div>
                             </div>
                             <div class="blog-content">
                                 <h4>文章標題</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sequi maiores voluptas
                                     consequatur pariatur corrupti, deleniti quo quam fugiat esse.</p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    進入文章
+                                </button>
                             </div>
                         </div>
                     </li>
-                    <li class="blog-item d-flex">
+                    <li class="blog-item" data-tags="health-nutrition">
                         <img src="../assets/images/article_4.jpg">
                         <div class="blog-info">
                             <div class="date_tag_block d-flex">
@@ -83,10 +114,15 @@
                                 <h4>文章標題</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sequi maiores voluptas
                                     consequatur pariatur corrupti, deleniti quo quam fugiat esse.</p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    進入文章
+                                </button>
                             </div>
                         </div>
                     </li>
-                    <li class="blog-item d-flex">
+                    <li class="blog-item" data-tags="member-stroy">
                         <img src="../assets/images/article_5.jpg">
                         <div class="blog-info">
                             <div class="date_tag_block d-flex">
@@ -97,6 +133,11 @@
                                 <h4>文章標題</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sequi maiores voluptas
                                     consequatur pariatur corrupti, deleniti quo quam fugiat esse.</p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    進入文章
+                                </button>
                             </div>
                         </div>
                     </li>
@@ -105,22 +146,24 @@
                     </li>
 
                 </ul>
-                <aside class="col-md-2">
-                    <h2 class="text-center">全部文章</h2>
-                    <ul class="tag-group text-center">
-                        <a href="#">
-                            <li>教練專欄</li>
-                        </a>
-                        <a href="#">
-                            <li>訓練專區</li>
-                        </a>
-                        <a href="#">
-                            <li>健康與營養</li>
-                        </a>
-                        <a href="#">
-                            <li>成員故事</li>
-                        </a>
-                    </ul>
+                <aside class="col-md-2 d-none d-md-block">
+                    <div class="tag-group text-center" id="tag-conainer">
+                        <button class="btn tag-all" vlaue="all-article">
+                            全部文章
+                        </button>
+                        <button class="btn btn-tag" value="coach-column">
+                            教練專欄
+                        </button>
+                        <button class="btn btn-tag" value="training-zone">
+                            訓練專區
+                        </button>
+                        <button class="btn btn-tag" value="health-nutrition">
+                            健康與營養
+                        </button>
+                        <button class="btn btn-tag" value="member-stroy">
+                            成員故事
+                        </button>
+                    </div>
                 </aside>
             </div>
 

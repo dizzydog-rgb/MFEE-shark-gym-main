@@ -36,16 +36,6 @@ closeIcon.addEventListener('click', () => {
     menuIcon.classList.toggle('my-d-none');
 });
 
-// bs5 modal
-// const myModal = document.getElementById('myModal')
-// console.log(myModal);
-
-// const myInput = document.getElementById('myInput')
-
-// myModal.addEventListener('shown.bs.modal', function () {
-//     myInput.focus()
-// })
-
 
 // email confirm
 document.addEventListener('DOMContentLoaded', function () {
@@ -67,4 +57,48 @@ document.addEventListener('DOMContentLoaded', function () {
         const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
     }
+})
+
+// blog article filter
+function articleFliter(index) {
+    // 找到所有文章項目，初始化所有文章
+    let articleItems = document.querySelectorAll('.blog-item');
+    articleItems.forEach(function (item) {
+        item.classList.add('show');
+        item.classList.remove('unshow')
+    })
+
+    const buttonValue = tagButtons[index].value;
+
+
+    // 遍歷文章項目並顯示具有標籤的文章
+    articleItems.forEach(function (item) {
+        if (item.getAttribute('data-tags') === buttonValue) {
+            item.classList.add('show');
+        } else {
+            item.classList.add('unshow');
+        }
+    });
+};
+
+const tagButtons = document.querySelectorAll('.btn-tag');
+
+tagButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        articleFliter(index)
+    });
+})
+
+// 顯示全部文章
+const allTagButton = document.querySelector('.tag-all');
+
+
+allTagButton.addEventListener('click', function () {
+    console.log('123');
+
+    let articleItems = document.querySelectorAll('.blog-item');
+    articleItems.forEach(function (item) {
+        item.classList.add('show');
+        item.classList.remove('unshow')
+    })
 })
