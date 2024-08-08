@@ -1,0 +1,148 @@
+#map {
+    height: 800px;
+    width: 90%;
+    margin: 0 auto 32px;
+}
+
+.map-section {
+    padding: 48px 0;
+
+    background: url('https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h3 {
+        text-align: center;
+        font-size: 48px;
+        color: white;
+        background-color: $secondary;
+        width: 40%;
+        margin: 32px auto 32px;
+        padding: 6px;
+        border-radius: 10px;
+    }
+
+    form {
+        font-size: 32px;
+        text-align: center;
+
+        input {
+            padding: 8px;
+            width: 50%
+        }
+
+        .btn-address {
+            font-size: 32px;
+            padding: 6px 16px;
+            color: white;
+            background-color: $primary;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.modal-title {
+    font-size: 32px;
+    color: $primary;
+}
+
+.modal-footer {
+    margin: 0 auto;
+    border: none;
+
+    .btn-reserve {
+        padding: 12px 16px;
+        background-color: $primary;
+        color: white;
+        font-size: 36px;
+        border-radius: 10px;
+        margin-top: -12px;
+        margin-bottom: 16px;
+    }
+}
+
+
+
+.result-section {
+    .location-title {
+        font-size: 24px;
+        color: $third;
+        margin-bottom: 16px;
+    }
+
+    .location-info {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-size: 20px;
+        color: gray;
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    #map {
+        height: 400px;
+        width: 95%;
+        margin: 0 auto 16px;
+    }
+
+    .map-section {
+        padding: 24px 0;
+
+        h3 {
+            font-size: 24px;
+            width: 90%;
+            margin: 16px auto 32px;
+        }
+
+        form {
+            font-size: 16px;
+            text-align: center;
+
+            input {
+                padding: 8px;
+                width: 90%;
+                margin-bottom: 8px;
+            }
+
+            .btn-address {
+                font-size: 16px;
+                padding: 4px 12px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .modal-title {
+        font-size: 24px;
+    }
+
+    .modal-footer {
+
+        .btn-reserve {
+            padding: 6px 12px;
+            font-size: 24px;
+            margin-top: -12px;
+        }
+    }
+
+
+
+    .result-section {
+        .location-title {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .location-info {
+            gap: 12px;
+            font-size: 16px;
+            margin-left: 16px;
+        }
+    }
+
+
+
+}

@@ -1,7 +1,5 @@
 import './assets/scss/all.scss';
 
-console.log("Hello world!");
-
 // Dynamic Navigation Highlighting
 document.addEventListener('DOMContentLoaded', function () {
     // 獲取當前頁面的文件名
@@ -59,46 +57,52 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 })
 
-// blog article filter
-function articleFliter(index) {
-    // 找到所有文章項目，初始化所有文章
-    let articleItems = document.querySelectorAll('.blog-item');
-    articleItems.forEach(function (item) {
-        item.classList.add('show');
-        item.classList.remove('unshow')
-    })
-
-    const buttonValue = tagButtons[index].value;
-
-
-    // 遍歷文章項目並顯示具有標籤的文章
-    articleItems.forEach(function (item) {
-        if (item.getAttribute('data-tags') === buttonValue) {
+// blog article filter by tag
+document.addEventListener('DOMContentLoaded', function () {
+    function articleFliter(index) {
+        // 找到所有文章項目，初始化所有文章
+        let articleItems = document.querySelectorAll('.blog-item');
+        articleItems.forEach(function (item) {
             item.classList.add('show');
-        } else {
-            item.classList.add('unshow');
-        }
-    });
-};
+            item.classList.remove('unshow')
+        })
 
-const tagButtons = document.querySelectorAll('.btn-tag');
-
-tagButtons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-        articleFliter(index)
-    });
-})
-
-// 顯示全部文章
-const allTagButton = document.querySelector('.tag-all');
+        const buttonValue = tagButtons[index].value;
 
 
-allTagButton.addEventListener('click', function () {
-    console.log('123');
+        // 遍歷文章項目並顯示具有標籤的文章
+        articleItems.forEach(function (item) {
+            if (item.getAttribute('data-tags') === buttonValue) {
+                item.classList.add('show');
+            } else {
+                item.classList.add('unshow');
+            }
+        });
+    };
 
-    let articleItems = document.querySelectorAll('.blog-item');
-    articleItems.forEach(function (item) {
-        item.classList.add('show');
-        item.classList.remove('unshow')
+    const tagButtons = document.querySelectorAll('.btn-tag');
+
+    tagButtons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            articleFliter(index)
+        });
     })
-})
+
+    // 顯示全部文章
+    const allTagButton = document.querySelector('.btn-tags');
+    console.log(allTagButton);
+
+
+    allTagButton.addEventListener('click', () => {
+        let articleItems = document.querySelectorAll('.blog-item');
+
+        articleItems.forEach((item) => {
+            item.classList.add('show');
+            item.classList.remove('unshow');
+        });
+    });
+
+});
+
+
+
