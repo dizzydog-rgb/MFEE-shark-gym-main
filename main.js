@@ -20,18 +20,22 @@ document.addEventListener('DOMContentLoaded', function () {
 // hamberger list
 const menuIcon = document.querySelector('.menu-icon');
 const closeIcon = document.querySelector('.close-icon')
-const hambugerList = document.querySelector('.hambuger-list');
+const hamburgerList = document.querySelector('.hamburger-list');
 
 menuIcon.addEventListener('click', () => {
-    hambugerList.classList.toggle('my-d-flex');
+    hamburgerList.classList.add('my-opacity');
     menuIcon.classList.toggle('my-d-none');
     closeIcon.classList.toggle('my-d-block');
+    hamburgerList.classList.toggle('my-d-flex');
 });
 
 closeIcon.addEventListener('click', () => {
-    hambugerList.classList.toggle('my-d-flex');
+    hamburgerList.classList.remove('my-opacity');
     closeIcon.classList.toggle('my-d-block');
     menuIcon.classList.toggle('my-d-none');
+    setTimeout(() => {
+        hamburgerList.classList.toggle('my-d-flex');
+    }, 500);
 });
 
 
