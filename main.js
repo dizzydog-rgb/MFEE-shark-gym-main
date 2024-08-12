@@ -93,18 +93,29 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     // 顯示全部文章
-    const allTagButton = document.querySelector('.btn-tags');
+    const allTagButton = document.querySelectorAll('.btn-tags');
     // console.log(allTagButton);
 
+    allTagButton.forEach((button) => {
+        button.addEventListener('click', () => {
+            let articleItems = document.querySelectorAll('.blog-item');
 
-    allTagButton.addEventListener('click', () => {
-        let articleItems = document.querySelectorAll('.blog-item');
-
-        articleItems.forEach((item) => {
-            item.classList.add('show');
-            item.classList.remove('unshow');
+            articleItems.forEach((item) => {
+                item.classList.add('show');
+                item.classList.remove('unshow');
+            });
         });
-    });
+    })
+
+
+    // allTagButton.addEventListener('click', () => {
+    //     let articleItems = document.querySelectorAll('.blog-item');
+
+    //     articleItems.forEach((item) => {
+    //         item.classList.add('show');
+    //         item.classList.remove('unshow');
+    //     });
+    // });
 
 });
 
