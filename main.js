@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 顯示全部文章
     const allTagButton = document.querySelector('.btn-tags');
-    console.log(allTagButton);
+    // console.log(allTagButton);
 
 
     allTagButton.addEventListener('click', () => {
